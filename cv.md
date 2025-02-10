@@ -78,7 +78,7 @@ Courses:
 
 + [HTML Academy](https://htmlacademy.ru/)
 
-+ [Cade Basics](https://code-basics.com/ru)
++ [Code Basics](https://code-basics.com/ru)
 
 ## Languages
 

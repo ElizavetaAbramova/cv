@@ -2,18 +2,19 @@
 ## **Junior Frontend Developer**
 ## **Contact information**
 * Location: Tbilisi, Georgia
-* Phone: +995591114729
+* Phone: +99559...
 * E-mail: a.d.elizaveta@gmail.com
 * GitHub [ElizavetaAbramova](https://github.com/ElizavetaAbramova "GitHub LInk")
 -----
 ## About myself
 -----
-I am 25 years old, programming is my hobby and I want to impoove my skills in that. My goal is to become a good Frontend Developer.
+Programming is my hobby and I want to improve my skills in that. My goal is to become a good Frontend Developer.
 ## Skills
 ------
 * HTML
 * CSS
 * JavaScript (Basic)
+* Node.js (Basic)
 * Git
 ## Code example
 ------
@@ -42,6 +43,7 @@ function isTicketLucky() {
 ```
 ## Experience 
 -----
+  *Projects:
     +[Pet Shelter web-site](https://rolling-scopes-school.github.io/elizavetaabramova-JSFEPRESCHOOL2024Q2/shelter/)
     +[Christmas Shop web-site](https://rolling-scopes-school.github.io/elizavetaabramova-JSFE2024Q4/christmas-shop/)
     +[Nonogram game](https://rolling-scopes-school.github.io/elizavetaabramova-JSFE2024Q4/nonograms/)

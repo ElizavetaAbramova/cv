@@ -11,13 +11,14 @@
 </head>
 <body>
     <header class="header">
-        <div class="container">
+        <div class="header-container">
         <nav>
             <ul class="nav-list">
                 <li class="nav-item"> <a href="#contact" class="nav-link"> Contact </a></li>
                 <li class="nav-item"> <a href="#about" class="nav-link"> About me </a></li>
                 <li class="nav-item"> <a href="#skills" class="nav-link"> Skills </a> </li>
                 <li class="nav-item"> <a href="#code" class="nav-link"> Code Example </a></li>
+                <li class="nav-item"> <a href="#projects" class="nav-link"> Projects </a></li>
                 <li class="nav-item"> <a href="#education" class="nav-link"> Education </a></li>
                 <li class="nav-item"> <a href="#languages" class="nav-link"> Languages </a></li>
             </ul>
@@ -28,23 +29,26 @@
         <div class="container">
         <section class="section" id="profile">
             <img alt="profile foto" src="20230910_140146.jpg" class="profile-foto">
-            <table class="profile-table">
-                <tbody>
-                    <tr><td class="profile-item"> <h1 class="section-title"> Elizaveta Abramova </h1> </td></tr>
-                    <tr><td class="profile-item"> <p> Junior Frontend Developer </p> </td></tr>
-                </tbody>
-            </table>
+        </section>
+        <section class="section" id="name">
+          <table class="profile-table">
+            <tbody>
+                <tr><td class="profile-item"> <h1 class="section-title"> Elizaveta Abramova </h1> </td></tr>
+                <tr><td class="profile-item"> <p> Frontend Developer </p> </td></tr>
+            </tbody>
+          </table>
         </section>
         <section class="section" id="contact"> <h2 class="section-title"> Contacts</h2>
                 <ul>
-                    <li> Location: Tbilisi, Georgia </li>
-                    <li> Phone: +995591114729</li>
-                    <li> E-mail: <a href="mailto:a.d.elizaveta@gmail.com"> a.d.elizaveta@gmail.com</a></li>
+                    <li> Location: Georgia </li>
+                    <li> Phone: </li>
+                    <!-- <li> Phone: +995691114729</li> -->
+                    <li> E-mail: <a href="mailto:a.d.elizaveta@gmail.com"> a.elizaveta@gmail.com</a></li>
                     <li> GitHub: <a href="https://github.com/ElizavetaAbramova" target="_blank">ElizavetaAbramova </a></li>
                 </ul>
         </section>
         <section class="section" id="about"> <h2 class="section-title"> About me </h2>
-                <p>I am 25 years old, programming is my hobby and I want to impoove my skills in that.
+                <p>Programming is my hobby and I want to improve my skills.
                 My goal is to become a good Frontend Developer. </p>
         </section>
         <section class="section" id="skills"> <h2 class="section-title">Skills</h2>
@@ -53,32 +57,32 @@
                     <li> CSS </li>
                     <li> JavaScript (Basic) </li>
                     <li> Git </li>
+                    <li> Node.js (Basic)</li>
                 </ul>
         </section>
         <section class="section" id="code"> <h2 class="section-title">Code example</h2>
-            <pre> <code> function isTicketLucky() {
-    let ticketNum = input.value;
-    let sum1 = 0;
-    let sum2 = 0;
-    let i = 0;
-    if (ticketNum.length % 2 !== 0) {
-        return (result.textContent = "Try another number");
-    }
-
-    for (i = 0; i &lt; ticketNum.length / 2; i += 1) {
-        sum1 += Number(ticketNum[i]);
-    }
-    for (i = ticketNum.length / 2; i &lt; ticketNum.length; i += 1) {
-        sum2 += Number(ticketNum[i]);
-    }
-    if (sum1 == sum2) {
-        return (result.textContent = "You have a lucky ticket!");
-    } else {
-        return (result.textContent = "I'm sorry, it's unlucky ticket");
-        }
-    }
+            <pre> <code>
+function countCats(matrix) {
+  let countOfCats = 0;
+  matrix.map((array) =&gt; {
+    array.map((item) =&gt; {
+      if (item === '^^') {
+        countOfCats += 1;
+      }
+    })
+  })
+  return countOfCats;
+}
             </code>
             </pre>
+        </section>
+        <section class="section" id="projects"> <h2 class="section-title"> Projects</h2>
+          <ul>
+            <li><a href="https://rolling-scopes-school.github.io/elizavetaabramova-JSFEPRESCHOOL2024Q2/shelter/">Pet Shelter web-site</a></li>
+            <li><a href="https://rolling-scopes-school.github.io/elizavetaabramova-JSFE2024Q4/christmas-shop/">Christmas Shop web-site</a></li>
+            <li><a href="https://rolling-scopes-school.github.io/elizavetaabramova-JSFE2024Q4/nonograms/">Nonogram game</a></li>
+            <li><a href="https://rolling-scopes-school.github.io/elizavetaabramova-JSFE2024Q4/simon-says/">Simon Says Game</a></li>
+          </ul>
         </section>
         <section class="section" id="education"> <h2 class="section-title"> Education</h2>
             <ul>
@@ -95,7 +99,8 @@
         </div>
     </main>
     <footer class="footer">
-        <div class="container">
+        <div class="footer-container">
+
         <p class="footer-item"> © 2024 <a href="https://github.com/ElizavetaAbramova" target="_blank" class="footer-link">ElizavetaAbramova </a> </p>
         <a class="footer-item" href="https://rs.school/courses/javascript-preschool-ru" target="_blank">
             <img title="Join RSSchool" alt="RSSchool logo" src="rs_school_js.svg" class="RSS-logo">

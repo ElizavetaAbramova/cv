@@ -42,11 +42,15 @@ function isTicketLucky() {
 ```
 ## Experience 
 -----
+    +[Pet Shelter web-site](https://rolling-scopes-school.github.io/elizavetaabramova-JSFEPRESCHOOL2024Q2/shelter/)
+    +[Christmas Shop web-site](https://rolling-scopes-school.github.io/elizavetaabramova-JSFE2024Q4/christmas-shop/)
+    +[Nonogram game](https://rolling-scopes-school.github.io/elizavetaabramova-JSFE2024Q4/nonograms/)
+    +[Simon Says Game](https://rolling-scopes-school.github.io/elizavetaabramova-JSFE2024Q4/simon-says/)
 ## Education
 ------
 * Courses:
-    + [HTML Academy](https://htmlacademy.ru/)
     + [RSSchool](https://rs.school/courses/javascript-preschool-ru)
+    + [HTML Academy](https://htmlacademy.ru/)
     + [Cade Basics](https://code-basics.com/ru)
 ## Languages
 -----

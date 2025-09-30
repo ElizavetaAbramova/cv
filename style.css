@@ -1,37 +1,37 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    height: 100%;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  height: 100%;
 }
 
 :root {
-    --main-color: #D7AFED;
-    --main-text-color: #97306C;
+  --main-color: #d7afed;
+  --main-text-color: #97306c;
 }
 
 body {
-    height: 100vh;
+  height: 100vh;
 
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    font-family: Arial, sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.5;
-    color: black;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: black;
 }
 
 a {
-  color: black;
+  color: #7a5d88;
   position: relative;
   padding-bottom: 3px;
   text-decoration: none;
@@ -41,6 +41,7 @@ a {
   background-color: var(--main-color);
   width: 100%;
   padding: 10px;
+  box-shadow: 0 0 40px var(--main-color);
 }
 
 .nav-list {
@@ -69,22 +70,24 @@ a {
 }
 
 .section {
-  border-bottom: 5px solid #D7AFED;
+  border-bottom: 5px solid #d7afed;
 }
 
-.section#languages {
+.section#languages,
+.section#education {
   border-bottom: none;
 }
 
-.profile-foto {
+.profile-photo {
   height: 170px;
   width: 170px;
   margin: 0 calc(50% - 90px);
 }
 
 .profile-table {
-  width: 100%;
-  text-align: center;
+  width: 70%;
+  text-align: right;
+  margin: auto;
 }
 
 .footer {
@@ -111,6 +114,30 @@ a {
   width: 150px;
 }
 
+.projects-list {
+  padding: 0;
+  list-style: none;
+}
+
+.projects-list a {
+  color: #9349bb;
+}
+.profile-item .section-title {
+  margin-bottom: 0;
+}
+.profile-item p {
+  margin: 0;
+}
+#contact .section-title {
+  margin-bottom: 0;
+}
+#contact ul {
+  margin-top: 0;
+}
+#about {
+  padding-right: 20px;
+}
+
 @media (max-width: 1000px) {
   .container {
     display: flex;
@@ -127,6 +154,9 @@ a {
   .container {
     padding: 20px 0 0 5px;
   }
+  #about {
+    padding-right: 0px;
+  }
 }
 
 @media (pointer: fine) {
@@ -136,12 +166,12 @@ a {
 
   a::after {
     position: absolute;
-    content: '';
+    content: "";
     bottom: 0;
     display: block;
     width: 0;
     height: 3px;
-    background: #9349bb;
+    background: #bb74e1;
     transition: 0.3s;
     right: 0;
   }

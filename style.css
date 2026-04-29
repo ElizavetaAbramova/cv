@@ -56,6 +56,10 @@ h3 {
   text-transform: capitalize;
 }
 
+h4 {
+  margin: 0 0 0.5em 0;
+}
+
 p {
   margin: 0;
 }
@@ -177,6 +181,17 @@ p {
 
 .title > * {
   margin: 0;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.project-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .footer {

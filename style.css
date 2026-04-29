@@ -11,83 +11,187 @@ html {
 }
 
 :root {
-  --main-color: #d7afed;
+  --main-color: #dfcee8;
   --main-text-color: #97306c;
 }
 
 body {
   height: 100vh;
-
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   font-family: Arial, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
   color: black;
 }
 
 a {
-  color: #7a5d88;
+  color: #613876;
   position: relative;
-  padding-bottom: 3px;
   text-decoration: none;
 }
 
-.header {
-  background-color: var(--main-color);
-  width: 100%;
-  padding: 10px;
-  box-shadow: 0 0 40px var(--main-color);
+ul {
+  margin: 0;
 }
 
-.nav-list {
-  display: flex;
-  justify-content: end;
+h1 {
+  font-size: 28px;
+  margin: 0;
 }
 
-.nav-item {
-  list-style-type: none;
-  margin: 5px 10px;
+h2 {
+  font-size: 22px;
+  margin: 0 0 0.5em 0;
+  text-transform: capitalize;
 }
 
-.nav-link {
-  text-decoration: none;
-  cursor: pointer;
+h3 {
+  font-size: 20px;
+  margin: 0 0 0.5em 0;
+  text-transform: capitalize;
 }
 
-.main {
-  margin: auto;
+h4 {
+  margin: 0 0 0.5em 0;
+}
+
+p {
+  margin: 0;
 }
 
 .container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  gap: 16px;
   padding: 20px 40px;
 }
 
+.column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  align-self: center;
+}
+
+.column.wide {
+  flex: 2;
+}
+
 .section {
-  border-bottom: 5px solid #d7afed;
+  padding: 1em;
+  position: relative;
 }
 
-.section#languages,
-.section#education {
-  border-bottom: none;
+.section::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 90%;
+  height: 2px;
+  background: var(--main-color);
+  border-radius: 999px;
+  transform: translateX(-50%);
 }
 
-.profile-photo {
+.column::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 2px;
+  height: 80%;
+  background: var(--main-color);
+  border-radius: 999px;
+  transform: translateY(-50%);
+}
+
+.column.wide .section::after {
+  left: 0;
+  transform: none;
+  width: 100%;
+}
+
+.section:last-child::after,
+.column:last-child::after {
+  content: none;
+}
+
+#profile {
+  text-align: center;
+}
+
+#about {
+  padding-right: 25px;
+  text-align: justify;
+}
+
+#about p {
+  padding-bottom: 5px;
+}
+
+.profile-picture {
   height: 170px;
   width: 170px;
-  margin: 0 calc(50% - 90px);
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-.profile-table {
-  width: 70%;
-  text-align: right;
-  margin: auto;
+.position {
+  margin: 0;
+}
+
+#education ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.contact-list > li {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+#work-experience {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title > * {
+  margin: 0;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.project-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .footer {
@@ -105,58 +209,10 @@ a {
   flex-wrap: wrap;
 }
 
-.footer-link {
-  padding: 5px 10px;
-}
-
-.RSS-logo {
-  height: 60px;
-  width: 150px;
-}
-
-.projects-list {
-  padding: 0;
-  list-style: none;
-}
-
-.projects-list a {
-  color: #9349bb;
-}
-.profile-item .section-title {
-  margin-bottom: 0;
-}
-.profile-item p {
-  margin: 0;
-}
-#contact .section-title {
-  margin-bottom: 0;
-}
-#contact ul {
-  margin-top: 0;
-}
-#about {
-  padding-right: 20px;
-}
-
-@media (max-width: 1000px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-}
-
-@media (max-width: 750px) {
-  .nav-list {
-    flex-wrap: wrap;
-    margin: 0;
-  }
-  .container {
-    padding: 20px 0 0 5px;
-  }
-  #about {
-    padding-right: 0px;
-  }
+.footer-copyright {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
 }
 
 @media (pointer: fine) {
@@ -167,11 +223,10 @@ a {
   a::after {
     position: absolute;
     content: "";
-    bottom: 0;
     display: block;
     width: 0;
     height: 3px;
-    background: #bb74e1;
+    background: var(--main-color);
     transition: 0.3s;
     right: 0;
   }

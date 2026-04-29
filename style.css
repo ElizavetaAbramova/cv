@@ -213,6 +213,7 @@ p {
   display: flex;
   align-items: flex-end;
   gap: 12px;
+  flex-wrap: wrap;
 }
 
 @media (pointer: fine) {
@@ -229,5 +230,18 @@ p {
     background: var(--main-color);
     transition: 0.3s;
     right: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    display: flex;
+    gap: 8px;
+    padding: 10px 20px;
+    flex-direction: column;
+  }
+
+  .column::after {
+    content: none;
   }
 }
